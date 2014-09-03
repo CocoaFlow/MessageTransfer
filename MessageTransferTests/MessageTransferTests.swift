@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 CocoaFlow. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 import XCTest
 
 class MessageTransferTests: XCTestCase {

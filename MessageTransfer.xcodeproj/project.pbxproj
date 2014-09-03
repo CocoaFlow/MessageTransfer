@@ -11,13 +11,32 @@
 		DAD292E019B6B83200B15F44 /* MessageTransferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD292DF19B6B83200B15F44 /* MessageTransferTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DAD292E919B6B93800B15F44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD292C719B6B83100B15F44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAD292CF19B6B83100B15F44;
+			remoteInfo = "MessageTransfer-Mac";
+		};
+		DAD2930619B6BA0F00B15F44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD292C719B6B83100B15F44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAD292EF19B6B9EC00B15F44;
+			remoteInfo = "MessageTransfer-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		DAD292D019B6B83100B15F44 /* MessageTransfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MessageTransfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD292D419B6B83100B15F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAD292D519B6B83100B15F44 /* MessageTransfer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageTransfer.h; sourceTree = "<group>"; };
-		DAD292DB19B6B83200B15F44 /* MessageTransferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessageTransferTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD292DB19B6B83200B15F44 /* MessageTransferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MessageTransferTests.xctest; path = "MessageTransfer-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD292DE19B6B83200B15F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAD292DF19B6B83200B15F44 /* MessageTransferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTransferTests.swift; sourceTree = "<group>"; };
+		DAD292F019B6B9EC00B15F44 /* MessageTransfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MessageTransfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD292FA19B6B9EC00B15F44 /* MessageTransferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MessageTransferTests.xctest; path = "MessageTransfer-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +48,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DAD292D819B6B83200B15F44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD292EC19B6B9EC00B15F44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD292F719B6B9EC00B15F44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -52,6 +85,8 @@
 			children = (
 				DAD292D019B6B83100B15F44 /* MessageTransfer.framework */,
 				DAD292DB19B6B83200B15F44 /* MessageTransferTests.xctest */,
+				DAD292F019B6B9EC00B15F44 /* MessageTransfer.framework */,
+				DAD292FA19B6B9EC00B15F44 /* MessageTransferTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,12 +136,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAD292ED19B6B9EC00B15F44 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		DAD292CF19B6B83100B15F44 /* MessageTransfer */ = {
+		DAD292CF19B6B83100B15F44 /* MessageTransfer-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DAD292E319B6B83200B15F44 /* Build configuration list for PBXNativeTarget "MessageTransfer" */;
+			buildConfigurationList = DAD292E319B6B83200B15F44 /* Build configuration list for PBXNativeTarget "MessageTransfer-Mac" */;
 			buildPhases = (
 				DAD292CB19B6B83100B15F44 /* Sources */,
 				DAD292CC19B6B83100B15F44 /* Frameworks */,
@@ -117,14 +159,14 @@
 			);
 			dependencies = (
 			);
-			name = MessageTransfer;
+			name = "MessageTransfer-Mac";
 			productName = MessageTransfer;
 			productReference = DAD292D019B6B83100B15F44 /* MessageTransfer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DAD292DA19B6B83200B15F44 /* MessageTransferTests */ = {
+		DAD292DA19B6B83200B15F44 /* MessageTransfer-MacTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DAD292E619B6B83200B15F44 /* Build configuration list for PBXNativeTarget "MessageTransferTests" */;
+			buildConfigurationList = DAD292E619B6B83200B15F44 /* Build configuration list for PBXNativeTarget "MessageTransfer-MacTests" */;
 			buildPhases = (
 				DAD292D719B6B83200B15F44 /* Sources */,
 				DAD292D819B6B83200B15F44 /* Frameworks */,
@@ -133,10 +175,47 @@
 			buildRules = (
 			);
 			dependencies = (
+				DAD292EA19B6B93800B15F44 /* PBXTargetDependency */,
 			);
-			name = MessageTransferTests;
+			name = "MessageTransfer-MacTests";
 			productName = MessageTransferTests;
 			productReference = DAD292DB19B6B83200B15F44 /* MessageTransferTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAD292EF19B6B9EC00B15F44 /* MessageTransfer-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD2930019B6B9ED00B15F44 /* Build configuration list for PBXNativeTarget "MessageTransfer-iOS" */;
+			buildPhases = (
+				DAD292EB19B6B9EC00B15F44 /* Sources */,
+				DAD292EC19B6B9EC00B15F44 /* Frameworks */,
+				DAD292ED19B6B9EC00B15F44 /* Headers */,
+				DAD292EE19B6B9EC00B15F44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MessageTransfer-iOS";
+			productName = MessageTransfer;
+			productReference = DAD292F019B6B9EC00B15F44 /* MessageTransfer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DAD292F919B6B9EC00B15F44 /* MessageTransfer-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD2930319B6B9ED00B15F44 /* Build configuration list for PBXNativeTarget "MessageTransfer-iOSTests" */;
+			buildPhases = (
+				DAD292F619B6B9EC00B15F44 /* Sources */,
+				DAD292F719B6B9EC00B15F44 /* Frameworks */,
+				DAD292F819B6B9EC00B15F44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAD2930719B6BA0F00B15F44 /* PBXTargetDependency */,
+			);
+			name = "MessageTransfer-iOSTests";
+			productName = MessageTransferTests;
+			productReference = DAD292FA19B6B9EC00B15F44 /* MessageTransferTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -154,6 +233,12 @@
 					DAD292DA19B6B83200B15F44 = {
 						CreatedOnToolsVersion = 6.0;
 					};
+					DAD292EF19B6B9EC00B15F44 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					DAD292F919B6B9EC00B15F44 = {
+						CreatedOnToolsVersion = 6.0;
+					};
 				};
 			};
 			buildConfigurationList = DAD292CA19B6B83100B15F44 /* Build configuration list for PBXProject "MessageTransfer" */;
@@ -168,8 +253,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DAD292CF19B6B83100B15F44 /* MessageTransfer */,
-				DAD292DA19B6B83200B15F44 /* MessageTransferTests */,
+				DAD292CF19B6B83100B15F44 /* MessageTransfer-Mac */,
+				DAD292DA19B6B83200B15F44 /* MessageTransfer-MacTests */,
+				DAD292EF19B6B9EC00B15F44 /* MessageTransfer-iOS */,
+				DAD292F919B6B9EC00B15F44 /* MessageTransfer-iOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -183,6 +270,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DAD292D919B6B83200B15F44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD292EE19B6B9EC00B15F44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD292F819B6B9EC00B15F44 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -207,7 +308,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAD292EB19B6B9EC00B15F44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD292F619B6B9EC00B15F44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAD292EA19B6B93800B15F44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAD292CF19B6B83100B15F44 /* MessageTransfer-Mac */;
+			targetProxy = DAD292E919B6B93800B15F44 /* PBXContainerItemProxy */;
+		};
+		DAD2930719B6BA0F00B15F44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAD292EF19B6B9EC00B15F44 /* MessageTransfer-iOS */;
+			targetProxy = DAD2930619B6BA0F00B15F44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		DAD292E119B6B83200B15F44 /* Debug */ = {
@@ -303,7 +431,7 @@
 				INFOPLIST_FILE = MessageTransfer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MessageTransfer;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -320,7 +448,7 @@
 				INFOPLIST_FILE = MessageTransfer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MessageTransfer;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -357,6 +485,84 @@
 			};
 			name = Release;
 		};
+		DAD2930119B6B9ED00B15F44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MessageTransfer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = MessageTransfer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAD2930219B6B9ED00B15F44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MessageTransfer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = MessageTransfer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAD2930419B6B9ED00B15F44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MessageTransferTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DAD2930519B6B9ED00B15F44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MessageTransferTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -369,7 +575,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DAD292E319B6B83200B15F44 /* Build configuration list for PBXNativeTarget "MessageTransfer" */ = {
+		DAD292E319B6B83200B15F44 /* Build configuration list for PBXNativeTarget "MessageTransfer-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DAD292E419B6B83200B15F44 /* Debug */,
@@ -377,11 +583,27 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		DAD292E619B6B83200B15F44 /* Build configuration list for PBXNativeTarget "MessageTransferTests" */ = {
+		DAD292E619B6B83200B15F44 /* Build configuration list for PBXNativeTarget "MessageTransfer-MacTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DAD292E719B6B83200B15F44 /* Debug */,
 				DAD292E819B6B83200B15F44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DAD2930019B6B9ED00B15F44 /* Build configuration list for PBXNativeTarget "MessageTransfer-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD2930119B6B9ED00B15F44 /* Debug */,
+				DAD2930219B6B9ED00B15F44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DAD2930319B6B9ED00B15F44 /* Build configuration list for PBXNativeTarget "MessageTransfer-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD2930419B6B9ED00B15F44 /* Debug */,
+				DAD2930519B6B9ED00B15F44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
