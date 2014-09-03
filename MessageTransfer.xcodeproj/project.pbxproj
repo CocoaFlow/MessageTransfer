@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DAD292D619B6B83100B15F44 /* MessageTransfer.h in Headers */ = {isa = PBXBuildFile; fileRef = DAD292D519B6B83100B15F44 /* MessageTransfer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DAD292E019B6B83200B15F44 /* MessageTransferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD292DF19B6B83200B15F44 /* MessageTransferTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +33,6 @@
 		DAD292D519B6B83100B15F44 /* MessageTransfer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageTransfer.h; sourceTree = "<group>"; };
 		DAD292DB19B6B83200B15F44 /* MessageTransferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MessageTransferTests.xctest; path = "MessageTransfer-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD292DE19B6B83200B15F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAD292DF19B6B83200B15F44 /* MessageTransferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTransferTests.swift; sourceTree = "<group>"; };
 		DAD292F019B6B9EC00B15F44 /* MessageTransfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MessageTransfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD292FA19B6B9EC00B15F44 /* MessageTransferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MessageTransferTests.xctest; path = "MessageTransfer-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -111,7 +109,6 @@
 		DAD292DC19B6B83200B15F44 /* MessageTransferTests */ = {
 			isa = PBXGroup;
 			children = (
-				DAD292DF19B6B83200B15F44 /* MessageTransferTests.swift */,
 				DAD292DD19B6B83200B15F44 /* Supporting Files */,
 			);
 			path = MessageTransferTests;
@@ -304,7 +301,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAD292E019B6B83200B15F44 /* MessageTransferTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
