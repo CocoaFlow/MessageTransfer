@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DAD292D619B6B83100B15F44 /* MessageTransfer.h in Headers */ = {isa = PBXBuildFile; fileRef = DAD292D519B6B83100B15F44 /* MessageTransfer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAD2932019B6BC4500B15F44 /* JSONLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD2931919B6BC2E00B15F44 /* JSONLib.framework */; };
+		DAD2932119B6BC5500B15F44 /* JSONLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD2931919B6BC2E00B15F44 /* JSONLib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,34 @@
 			remoteGlobalIDString = DAD292EF19B6B9EC00B15F44;
 			remoteInfo = "MessageTransfer-iOS";
 		};
+		DAD2931819B6BC2E00B15F44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD2931119B6BC2E00B15F44 /* JSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7D7BD7C2195418CB00AC2E4E;
+			remoteInfo = "JSON-OSX";
+		};
+		DAD2931A19B6BC2E00B15F44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD2931119B6BC2E00B15F44 /* JSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7D7BD7CD195418CC00AC2E4E;
+			remoteInfo = "JSON-OSXTests";
+		};
+		DAD2931C19B6BC2E00B15F44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD2931119B6BC2E00B15F44 /* JSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7D1E362F199478A600856119;
+			remoteInfo = "JSON-iOS";
+		};
+		DAD2931E19B6BC2E00B15F44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD2931119B6BC2E00B15F44 /* JSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7D1E3639199478A600856119;
+			remoteInfo = "JSON-iOSTests";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +65,7 @@
 		DAD292DE19B6B83200B15F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAD292F019B6B9EC00B15F44 /* MessageTransfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MessageTransfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD292FA19B6B9EC00B15F44 /* MessageTransferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MessageTransferTests.xctest; path = "MessageTransfer-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD2931119B6BC2E00B15F44 /* JSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSON.xcodeproj; path = "External/json-swift/JSON.xcodeproj"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD2932119B6BC5500B15F44 /* JSONLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD2932019B6BC4500B15F44 /* JSONLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +125,7 @@
 		DAD292D219B6B83100B15F44 /* MessageTransfer */ = {
 			isa = PBXGroup;
 			children = (
+				DAD2931119B6BC2E00B15F44 /* JSON.xcodeproj */,
 				DAD292D519B6B83100B15F44 /* MessageTransfer.h */,
 				DAD292D319B6B83100B15F44 /* Supporting Files */,
 			);
@@ -120,6 +154,17 @@
 				DAD292DE19B6B83200B15F44 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAD2931219B6BC2E00B15F44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAD2931919B6BC2E00B15F44 /* JSONLib.framework */,
+				DAD2931B19B6BC2E00B15F44 /* JSON-OSXTests.xctest */,
+				DAD2931D19B6BC2E00B15F44 /* JSONLib.framework */,
+				DAD2931F19B6BC2E00B15F44 /* JSON-iOSTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +293,12 @@
 			mainGroup = DAD292C619B6B83100B15F44;
 			productRefGroup = DAD292D119B6B83100B15F44 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DAD2931219B6BC2E00B15F44 /* Products */;
+					ProjectRef = DAD2931119B6BC2E00B15F44 /* JSON.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DAD292CF19B6B83100B15F44 /* MessageTransfer-Mac */,
@@ -257,6 +308,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DAD2931919B6BC2E00B15F44 /* JSONLib.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSONLib.framework;
+			remoteRef = DAD2931819B6BC2E00B15F44 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DAD2931B19B6BC2E00B15F44 /* JSON-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "JSON-OSXTests.xctest";
+			remoteRef = DAD2931A19B6BC2E00B15F44 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DAD2931D19B6BC2E00B15F44 /* JSONLib.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSONLib.framework;
+			remoteRef = DAD2931C19B6BC2E00B15F44 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DAD2931F19B6BC2E00B15F44 /* JSON-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "JSON-iOSTests.xctest";
+			remoteRef = DAD2931E19B6BC2E00B15F44 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DAD292CE19B6B83100B15F44 /* Resources */ = {
