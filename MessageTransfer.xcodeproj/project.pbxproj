@@ -65,10 +65,10 @@
 		DAD292D019B6B83100B15F44 /* MessageTransfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MessageTransfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD292D419B6B83100B15F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAD292D519B6B83100B15F44 /* MessageTransfer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageTransfer.h; sourceTree = "<group>"; };
-		DAD292DB19B6B83200B15F44 /* MessageTransferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MessageTransferTests.xctest; path = "MessageTransfer-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD292DB19B6B83200B15F44 /* MessageTransfer-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MessageTransfer-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD292DE19B6B83200B15F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAD292F019B6B9EC00B15F44 /* MessageTransfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MessageTransfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAD292FA19B6B9EC00B15F44 /* MessageTransferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MessageTransferTests.xctest; path = "MessageTransfer-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD292FA19B6B9EC00B15F44 /* MessageTransfer-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MessageTransfer-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD2930E19B6BBEE00B15F44 /* MessageSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageSender.swift; sourceTree = "<group>"; };
 		DAD2931119B6BC2E00B15F44 /* JSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSON.xcodeproj; path = "External/json-swift/JSON.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		DAD2932219B6BD9600B15F44 /* MessageReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageReceiver.swift; sourceTree = "<group>"; };
@@ -121,9 +121,9 @@
 			isa = PBXGroup;
 			children = (
 				DAD292D019B6B83100B15F44 /* MessageTransfer.framework */,
-				DAD292DB19B6B83200B15F44 /* MessageTransferTests.xctest */,
+				DAD292DB19B6B83200B15F44 /* MessageTransfer-MacTests.xctest */,
 				DAD292F019B6B9EC00B15F44 /* MessageTransfer.framework */,
-				DAD292FA19B6B9EC00B15F44 /* MessageTransferTests.xctest */,
+				DAD292FA19B6B9EC00B15F44 /* MessageTransfer-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -229,7 +229,7 @@
 			);
 			name = "MessageTransfer-MacTests";
 			productName = MessageTransferTests;
-			productReference = DAD292DB19B6B83200B15F44 /* MessageTransferTests.xctest */;
+			productReference = DAD292DB19B6B83200B15F44 /* MessageTransfer-MacTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		DAD292EF19B6B9EC00B15F44 /* MessageTransfer-iOS */ = {
@@ -265,7 +265,7 @@
 			);
 			name = "MessageTransfer-iOSTests";
 			productName = MessageTransferTests;
-			productReference = DAD292FA19B6B9EC00B15F44 /* MessageTransferTests.xctest */;
+			productReference = DAD292FA19B6B9EC00B15F44 /* MessageTransfer-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
