@@ -13,6 +13,6 @@ public protocol MessageSender {
     func send(channel: String, _ topic: String, _ payload: JSON)
 }
 
-public protocol MessageSenderWorkaround: MessageSender {
+public protocol MessageSenderWithReceiver: MessageSender {
     var messageReceiver: MessageReceiver? { get set }
 }
