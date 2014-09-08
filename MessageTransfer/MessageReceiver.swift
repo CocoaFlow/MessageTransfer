@@ -10,7 +10,7 @@ import Foundation
 import JSONLib
 
 public protocol MessageReceiver {
-    func receive(channel: String, _ topic: String, _ payload: JSON)
+    func receive(channel: String, _ topic: String, _ payload: JSON?)
 }
 
 public protocol MessageReceiverWithSender: MessageReceiver {
